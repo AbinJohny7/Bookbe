@@ -27,3 +27,10 @@ create modelFile(userModel.js)
 import mongoose
 create a schema for providing a semi-rigid schema for our data'schema
 create  a model using that schema 
+
+
+
+-->add book
+1. only accesible to logined users
+   --> jwt middleware
+2.image uploading is happening
