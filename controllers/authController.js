@@ -43,8 +43,8 @@ exports.loginUser = async (req, res) => {
           userType: existingUser.userType,
         };
         let token = jwt.sign(payload, process.env.jwtSecretKey);
-
-        res.status(200).json({ message: "Login Sucessfully", token });
+      //existingUser is used  for taking the value userType
+        res.status(200).json({ message: "Login Sucessfully", token,existingUser });
       } else {
         res.status(400).json({ message: "Invalid Password" });
       }
@@ -71,7 +71,7 @@ exports.googleLoginApi = async (req, res) => {
       };
       let token = jwt.sign(payload, process.env.jwtSecretKey);
 
-      res.status(200).json({ message: "Login Sucessfully", token });
+      res.status(200).json({ message: "Login Sucessfully", token,existingUser });
     } else {
       //register logic
       let newUser = new userModel({
