@@ -1,0 +1,46 @@
+disadvantages of node 
+
+Express .js
+1.Express js is a framework of node.js
+2.It is used to built  API's and server applications easily
+3.It is reduces manual code ,gives useful functions(routing,middleware,HTTP handling etc..)
+4.It is minimal ,fast and lightweight
+
+
+steps to create a express server
+1.create a folder for server
+2.npm init-to create a package.json file
+3.create a file  for server(index.js)
+4.install express - npm i express
+5.import express(const express=.....)
+6.create a server using express
+7.declare a port to run the applications
+8.Tell the server to listen to that port
+9.install cors(npm i cors)
+10.import cors
+11.tell the server to use cors
+12.tell the server to use express.json() to parse
+
+
+
+create modelFile(userModel.js)
+import mongoose
+create a schema for providing a semi-rigid schema for our data'schema
+create  a model using that schema 
+
+
+
+-->add book
+1. only accesible to logined users
+   --> jwt middleware
+2.image uploading is happening
+
+
+
+stripe
+1.create account
+2.new project
+3.2---key
+      1.pk-->Publishable key
+      2.sk-->Secret key
+
